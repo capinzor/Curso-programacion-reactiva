@@ -10,7 +10,9 @@ public class VegetalCollection {
         ArrayList<Vegetal> vegetales = new ArrayList<Vegetal>();
         vegetales.add(new Vegetal("Lechuga", 2000, 500,  "A", "Neutro",1800 ));
         vegetales.add(new Vegetal("Espinaca", 2200, 520,  "B", "Acido",1700 ));
-        vegetales.add(new Vegetal("Papa", 2500, 514,  "C", "Alcalino",2500 ));
+        vegetales.add(new Vegetal("Papa", 2500, 510,  "C", "Alcalino",2500 ));
+        vegetales.add(new Vegetal("Papa", 2400, 514,  "C", "Alcalino",2500 ));
+        vegetales.add(new Vegetal("Papa", 2300, 514,  "C", "Alcalino",2500 ));
         vegetales.add(new Vegetal("Zanahoria", 1800, 510,  "A", "Neutro",1800 ));
         vegetales.add(new Vegetal("Tomate", 2000, 500,  "D", "Neutro",2000 ));
         vegetales.add(new Vegetal("Yuca", 1800, 490,  "B", "Neutro",1000 ));
