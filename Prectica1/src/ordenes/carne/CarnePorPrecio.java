@@ -1,3 +1,7 @@
+package ordenes.carne;
+
+import clases.Carne;
+
 import java.util.Comparator;
 
 public class CarnePorPrecio implements Comparator<Carne> {

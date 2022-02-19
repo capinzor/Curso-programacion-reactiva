@@ -1,3 +1,7 @@
+package clases;
+
+import java.util.ArrayList;
+
 public class Carne {
     private String nombre;
     private double precio;
@@ -42,4 +46,17 @@ public class Carne {
     public void setPesoEnGramos(double pesoEnGramos) {
         this.pesoEnGramos = pesoEnGramos;
     }
+
+    public static void imprimirLista(ArrayList<Carne> carnes){
+        System.out.println("===============================================================");
+        System.out.printf("%15s %10s %12s %s", "NOMBRE", "PRECIO", "MADURACIÓN", "PESO");
+        System.out.println();
+        for(Carne carne : carnes){
+            System.out.format("%15s %10s %12s %7s",
+                    carne.getNombre(), carne.getPrecio(), carne.getMaduracion(), carne.getPesoEnGramos());
+            System.out.println();
+        }
+        System.out.println();
+    }
+
 }

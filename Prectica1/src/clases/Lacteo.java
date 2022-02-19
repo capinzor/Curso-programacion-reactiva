@@ -1,3 +1,7 @@
+package clases;
+
+import java.util.ArrayList;
+
 public class Lacteo {
     String tipo;
     double precio;
@@ -25,5 +29,17 @@ public class Lacteo {
 
     public double getPesoEnGramos() {
         return pesoEnGramos;
+    }
+
+    public static void imprimirLista(ArrayList<Lacteo> lacteos){
+        System.out.println("===============================================================");
+        System.out.printf("%15s %10s %12s %s", "NOMBRE", "PRECIO", "MADURACIÓN", "PESO");
+        System.out.println();
+        for(Lacteo lacteo : lacteos){
+            System.out.format("%15s %10s %12s %7s",
+                    lacteo.getTipo(), lacteo.getPrecio(), lacteo.getPresentacion(), lacteo.getPesoEnGramos());
+            System.out.println();
+        }
+        System.out.println();
     }
 }
