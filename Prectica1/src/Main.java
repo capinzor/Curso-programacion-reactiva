@@ -49,13 +49,5 @@ public class Main {
         System.out.println("Listado de vegetales ordenado por suelo de cultivo de forma ascendente, altura de \n" +
                 "cultivo de forma descendente y precio de forma descendente.");
         Vegetal.imprimirLista(vegetales);
-
-
-
-
-
-
-
-
     }
 }
