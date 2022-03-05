@@ -20,7 +20,7 @@
 
 # Práctica 2
 
-### El método main de la practica 1 se encuentra en la siguient ruta **_"/Prectica2/src/Main.java"_**
+### El método main de la practica 2 se encuentra en la siguient ruta **_"/Prectica2/src/Main.java"_**
 
 ### A continuación se muestran las siguientes capturas de pantalla
 
