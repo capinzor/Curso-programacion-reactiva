@@ -1,5 +1,8 @@
 package clases;
 
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.util.ArrayList;
 
 public class Vegetal {
@@ -54,5 +57,26 @@ public class Vegetal {
             System.out.println();
         }
         System.out.println();
+    }
+
+    static final String RUTA_ARCHIVO_VEGETALES="E:\\Curso-programacion-reactiva\\Prectica2\\assets\\txt\\vegetales.txt";
+
+    public static void crearColeccionVegetales(ArrayList<Vegetal> vegetales) throws IOException {
+        Path pathArchivo = Path.of(RUTA_ARCHIVO_VEGETALES);
+        String coleccion = Files.readString(pathArchivo);
+
+        String parts[] = coleccion.replaceAll("\n",",").replace("\"","").strip().split(",");
+
+        for (int i=0;i<parts.length/6;i++){
+
+            String nombre = parts[i*6+0];
+            double precio = Double.parseDouble(parts[i*6+1]);
+            double peso = Double.parseDouble(parts[i*6+2]);
+            String presentacion = parts[i*6+3];
+            String suelo = parts[i*6+4];
+            double altura = Double.parseDouble(parts[i*6+5]);
+            vegetales.add(new Vegetal(nombre, precio, peso, presentacion, suelo, altura));
+
+        }
     }
 }

@@ -1,5 +1,8 @@
 package clases;
 
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.util.ArrayList;
 
 public class Lacteo {
@@ -41,5 +44,24 @@ public class Lacteo {
             System.out.println();
         }
         System.out.println();
+    }
+
+    static final String RUTA_ARCHIVO_LACTEOS="E:\\Curso-programacion-reactiva\\Prectica2\\assets\\txt\\lacteos.txt";
+
+    public static void crearColeccionLacteos(ArrayList<Lacteo> lacteos) throws IOException {
+        Path pathArchivo = Path.of(RUTA_ARCHIVO_LACTEOS);
+        String coleccion = Files.readString(pathArchivo);
+
+        String parts[] = coleccion.replaceAll("\n",",").replace("\"","").strip().split(",");
+
+        for (int i=0;i<parts.length/4;i++){
+
+            String tipo = parts[i*4+0];
+            double precio = Double.parseDouble(parts[i*4+1]);
+            String presentacion = parts[i*4+2];
+            double pesoEnGramos = Double.parseDouble(parts[i*4+3]);
+            lacteos.add(new Lacteo( tipo, precio, presentacion, pesoEnGramos));
+
+        }
     }
 }

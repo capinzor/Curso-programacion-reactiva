@@ -1,5 +1,8 @@
 package clases;
 
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.util.ArrayList;
 
 public class Carne {
@@ -57,6 +60,24 @@ public class Carne {
             System.out.println();
         }
         System.out.println();
+    }
+
+    static final String RUTA_ARCHIVO_CARNES="E:\\Curso-programacion-reactiva\\Prectica2\\assets\\txt\\carnes.txt";
+
+    public static void crearColeccionCarnes(ArrayList<Carne> carnes) throws IOException {
+        Path pathArchivo = Path.of(RUTA_ARCHIVO_CARNES);
+        String coleccion = Files.readString(pathArchivo);
+
+        String parts[] = coleccion.replaceAll("\n",",").replace("\"","").strip().split(",");
+
+        for (int i=0;i<parts.length/4;i++){
+
+            String nombre = parts[i*4+0];
+            double precio = Double.parseDouble(parts[i*4+1]);
+            String maduracion = parts[i*4+2];
+            double pesoEnGramos = Double.parseDouble(parts[i*4+3]);
+            carnes.add(new Carne( nombre, precio, maduracion, pesoEnGramos));
+        }
     }
 
 }

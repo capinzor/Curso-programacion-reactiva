@@ -1,20 +1,24 @@
 import clases.Carne;
 import clases.Lacteo;
 import clases.Vegetal;
-import collections.CarneCollection;
-import collections.LacteoCollection;
-import collections.VegetalCollection;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.stream.Collectors;
 
+import static clases.Vegetal.crearColeccionVegetales;
+
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
-        ArrayList<Carne> carnes = CarneCollection.createCarnesCollection();
-        ArrayList<Vegetal> vegetales = VegetalCollection.createVegetalCollection();
-        ArrayList<Lacteo> lacteos = LacteoCollection.createLacteosCollection();
+        ArrayList<Carne> carnes = new ArrayList<>();
+        Carne.crearColeccionCarnes(carnes);
+        ArrayList<Vegetal> vegetales = new ArrayList<>();
+        Vegetal.crearColeccionVegetales(vegetales);
+        ArrayList<Lacteo> lacteos = new ArrayList<>();
+        Lacteo.crearColeccionLacteos(lacteos);
+
 
         Comparator<Carne> comparadorCarnes1= Comparator
                                                 .comparing(Carne::getPesoEnGramos).reversed()

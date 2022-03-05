@@ -1,0 +1,17 @@
+"Lechuga", 2000, 500,  "A", "Neutro",1800
+"Espinaca", 2200, 520,  "B", "Acido",1700
+"Papa", 2500, 510,  "C", "Alcalino",2500
+"Papa", 2400, 514,  "C", "Alcalino",2500
+"Papa", 2300, 514,  "C", "Alcalino",2500
+"Zanahoria", 1800, 510,  "A", "Neutro",1800
+"Tomate", 2000, 500,  "D", "Neutro",2000
+"Yuca", 1800, 490,  "B", "Neutro",1000
+"Cebolla", 1500, 502,  "D", "Acido",2100
+"Pimenton", 1600, 600,  "C", "Acido",2000
+"Lenteja", 2100, 550,  "B", "Alcalino",1500
+"Frijol", 4000, 490,  "A", "Neutro",2100
+"Garbanzo", 2800, 500,  "F", "Alcalino",1400
+"Arroz", 2400, 508,  "C", "Neutro",1100
+"Calabaza", 1300, 506,  "A", "Acido",2200
+"Remolacha", 1400, 500,  "A", "Neutro",2150
+"Pepino", 1900, 600,  "B", "Acido",1700
