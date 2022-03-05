@@ -30,9 +30,9 @@
 4. Listado de vegetales ordenados por nombre, peso y precio de forma descendente
 5. Listado de vegetales ordenado por suelo de cultivo de forma ascendente, altura de cultivo de forma descendente y precio de forma descendente.
 
-![Image text](https://raw.githubusercontent.com/capinzor/Curso-programacion-reactiva/master/Prectica1/assets/imagenes/carnes1.png)
-![Image text](https://raw.githubusercontent.com/capinzor/Curso-programacion-reactiva/master/Prectica1/assets/imagenes/carnes2.png)
-![Image text](https://raw.githubusercontent.com/capinzor/Curso-programacion-reactiva/master/Prectica1/assets/imagenes/lacteos1.png)
-![Image text](https://raw.githubusercontent.com/capinzor/Curso-programacion-reactiva/master/Prectica1/assets/imagenes/vegetales1.png)
-![Image text](https://raw.githubusercontent.com/capinzor/Curso-programacion-reactiva/master/Prectica1/assets/imagenes/vegetales2.png)
+![Image text](https://raw.githubusercontent.com/capinzor/Curso-programacion-reactiva/master/Prectica2/assets/imagenes/carnes1.png)
+![Image text](https://raw.githubusercontent.com/capinzor/Curso-programacion-reactiva/master/Prectica2/assets/imagenes/carnes2.png)
+![Image text](https://raw.githubusercontent.com/capinzor/Curso-programacion-reactiva/master/Prectica2/assets/imagenes/lacteos1.png)
+![Image text](https://raw.githubusercontent.com/capinzor/Curso-programacion-reactiva/master/Prectica2/assets/imagenes/vegetales1.png)
+![Image text](https://raw.githubusercontent.com/capinzor/Curso-programacion-reactiva/master/Prectica2/assets/imagenes/vegetales2.png)
 
