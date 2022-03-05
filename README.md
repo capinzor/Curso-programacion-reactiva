@@ -22,6 +22,9 @@
 
 ### El método main de la practica 2 se encuentra en la siguient ruta **_"/Prectica2/src/Main.java"_**
 
+- Se eliminan las clases que crean las colecciones ya que se lee del archivo plano
+- Se eliminan las clases que ordenan ya que se usa el stream.sort()
+
 ### A continuación se muestran las siguientes capturas de pantalla
 
 1. Listado de carnes ordenado por peso de forma descendente y precio de forma ascendente
